@@ -13,9 +13,12 @@ using System.Web.UI.WebControls;
 namespace WebApplication1
 {
     public partial class Create : System.Web.UI.Page
-    {
+    {    
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
+
             txtDate.Text = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd");
             txtDate.Attributes["min"] = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd");
             txtDate.Attributes["max"] = DateTime.Now.AddDays(15).ToString("yyyy-MM-dd");
